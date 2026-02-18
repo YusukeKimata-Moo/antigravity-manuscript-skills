@@ -25,7 +25,7 @@ your-project/
 
 ```bash
 # リポジトリをクローンし、スキルをコピー
-git clone https://github.com/<your-username>/antigravity-manuscript-skills.git
+git clone https://github.com/YusukeKimata-Moo/antigravity-manuscript-skills.git
 cp -r antigravity-manuscript-skills/manuscript-review .agent/skills/
 cp -r antigravity-manuscript-skills/manuscript-translation .agent/skills/
 ```
@@ -53,3 +53,4 @@ Discussion セクションを学術英語に翻訳せよ
 - 日本語で原稿を執筆し、最終的に英訳するワークフロー
 - セクションごとに個別のMarkdownファイルで管理する原稿構成
 - 分子生物学・生命科学分野の学術論文（他分野にも応用可能）
+
