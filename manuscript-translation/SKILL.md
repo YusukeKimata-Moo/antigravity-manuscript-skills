@@ -28,7 +28,8 @@ description: Translate Japanese molecular biology manuscript sections into acade
 ### 共通ルール
 
 - 各Phaseの出力をユーザーに提示し、承認を得てから次のPhaseに進む
-- 投稿予定の**ジャーナルと論文形式**を [journal_guidelines.md](../shared-references/journal_guidelines.md) に記入してもらい、内容を参照する
+- 投稿予定のジャーナル規定は `../shared-references/journal_guidelines.md` を参照する。もしファイルが存在しない場合や、**ファイル内にテンプレートであることを示す目印（「これはテンプレートファイルです」等）が含まれている場合**、もしくはユーザーが新たにジャーナルの投稿規程URLを提示した場合は、まずユーザーに投稿先ジャーナルのURLを提示するよう求めた上で、`browser_subagent` を起動してURLを探索させ、英語の規程（単語数など）とフォーマットの規程（セクション構成など）をすべて網羅した `journal_guidelines.md` を自動生成して保存する。
+- 本英文校正フェーズにおける規定の確認は、生成されたファイルのうち**単語数（AbstractやMain textのWord count）やイギリス/アメリカ英語の指定など、英文に関する規定の確認のみ**に限定する（セクション構成や参考文献フォーマット等の構造確認は `journal-guideline-checker` スキルを使用する）。
 
 ### ユーザー承認ルール
 
@@ -75,7 +76,7 @@ description: Translate Japanese molecular biology manuscript sections into acade
 
 ### 3.4 学名・略語のルール
 
-- **学名**: イタリック体。初出はフルネーム（例: _Marchantia polymorpha_）、以降は省略可（例: _M. polymorpha_）
+- **学名**: イタリック体。初出はフルネーム（例: _Arabidopsis thaliana_）、以降は省略可（例: _A. thaliana_）
 - **略語**: 初出でフルスペルアウト＋括弧内に略語（例: green fluorescent protein (GFP)）
 
 ### 3.5 出力フォーマット
@@ -107,6 +108,7 @@ English paragraph
 
 #### 文法・文体
 
+- [ ] **ジャーナル規定（語数・言語）**: AbstractやMain text等の文字数制限、UK/US英語の指定など、言語に特化した投稿規程に準拠しているか
 - [ ] **時制の一貫性**: セクション内で時制が統一されているか（[tense_rules.md](references/tense_rules.md) 参照）
 - [ ] **冠詞**: a/an/the の使い分け（初出 vs 既出、特定 vs 不特定）
 - [ ] **数の一致**: 主語と動詞、名詞と代名詞の数

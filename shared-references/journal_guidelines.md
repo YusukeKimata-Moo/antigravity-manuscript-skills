@@ -1,36 +1,50 @@
-# ジャーナル投稿規定
+# ジャーナル投稿規定（テンプレート）
 
-投稿先ジャーナルの要件を記入してください。このファイルは `manuscript-review` および `manuscript-translation` スキルが参照します。
+> [!WARNING]
+> これはテンプレートファイルです。AIエージェントは具体的な投稿規程を記録・生成する際に、この文を含むファイル全体を上書き・削除してください。
 
----
+※注意：エージェント（`journal-guideline-checker` や `manuscript-translation`）に投稿規程チェック・自動取得を依頼した際、**このファイルは抽出したルールによって自動的に上書きされることがあります**。手動で規定を管理・記入する場合は、以下の項目を参考にしてください。
 
-## 基本情報
+## 1. 基本情報
 
-- **ジャーナル名**: <!-- 例: Nature -->
-- **論文形式**: <!-- Article / Letter / Brief Communication / Review など -->
-- **投稿ガイドラインURL**: <!-- https://... -->
+- **ジャーナル名**: [例: Nature, Current Biology, eLife]
+- **論文形式**: [例: Research Article, Letter, Short Communication]
+- **投稿ガイドラインURL**: [ガイドラインのURL]
 
-## 語数・セクション制限
+## 2. 語数・制限事項
 
-- **本文の語数上限**: <!-- 例: 2,000 words -->
-- **語数に含まれる範囲**: <!-- 例: Introduction〜Discussion。Methods, References は除外 -->
-- **Abstract の語数上限**: <!-- 例: 150 words -->
-- **必須セクション**: <!-- 例: Abstract, Introduction, Results, Discussion, Methods -->
-- **セクション見出しの有無**: <!-- 例: Results/Discussion の見出しなし (Letter形式) -->
+- **Abstract**: [例: 250 words以内、見出しなしの1パラグラフ]
+- **Main Text (本文)**: [例: 5,000 words以内、文字数制限なし]
+- **参考文献の数**: [例: 制限なし、最大50報など]
 
-## Figure・Table
+## 3. 言語規定
 
-- **Figure 数の上限**: <!-- 例: 4 figures -->
-- **Supplementary Figure の可否**: <!-- 例: 可（上限なし）-->
-- **Table の可否**: <!-- 例: Supplementary Table のみ -->
+- **英語の指定**: [例: US English / UK English / どちらでも一貫していれば可]
 
-## 参考文献
+## 4. セクション構成と順序
 
-- **引用数の上限**: <!-- 例: 30 references -->
-- **引用形式**: <!-- 例: 番号順 / 著者名-年 -->
+- **標準的な順序**: [例: Title Page → Abstract → Introduction → Results → Discussion → Methods → Acknowledgements → References]
+- **特記事項**: [例: Results と Discussion を結合可能、Methods は本文の最後に配置]
 
-## その他
+## 5. 参考文献フォーマット (References)
 
-- **Data Availability Statement**: <!-- 必須 / 任意 -->
-- **Author Contributions**: <!-- 必須 / 任意 -->
-- **特記事項**: <!-- ジャーナル固有のルールがあれば記載 -->
+- **本文中の引用スタイル**: [例: Author-year 形式 `(Smith et al., 2026)` / 番号形式 `[1]` / 上付き番号]
+- **リストの記述スタイル**: [例: アルファベット順、著者は〇名まで記載し以降はet al.、論文タイトルの記載必須]
+
+## 6. Figure / Table 要件
+
+- **ファイルの配置**: [例: 本文中に挿入 / 原稿の末尾（Referencesの後）にまとめて配置 / 独立したファイルとしてアップロード]
+- **Figure Legends**: [例: 原稿の末尾にまとめて記載]
+- **パネル等**: [例: パネルのラベルは大文字（A, B, C...）を使用]
+
+## 7. 分子生物学特有の表記ルール (Nomenclature)
+
+- **遺伝子 / タンパク質**: [例: 遺伝子名はイタリック体、タンパク質名は第一文字大文字のローマン体]
+- **学名 (Species names)**: [例: 初出時はフルスペル（*Arabidopsis thaliana*）、以降は省略形（*A. thaliana*）で記載し、常にイタリック体]
+
+## 8. 必須ステートメント (Declarations/Statements)
+
+- **Data Availability**: [必須の有無、RNA-seqやイメージングデータのリポジトリアクセッション番号の記載位置]
+- **Author Contributions**: [必須の有無、CRediT分類を使用するかなど]
+- **Conflict of Interest / Competing Interests**: [必須の有無]
+- **AI / LLMツール使用**: [使用した場合の記載位置やポリシー]

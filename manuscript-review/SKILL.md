@@ -57,7 +57,6 @@ description: Review and proofread molecular biology manuscript sections for stru
 
 ### 4.1 修正前に必ずユーザーに確認
 
-- 投稿予定の**ジャーナルと論文形式**を [journal_guidelines.md](../shared-references/journal_guidelines.md) に記入してもらい、内容を参照する
 - 修正箇所と修正案を**表形式で一覧提示**する
 - 各修正の**理由**を明記する
 - ユーザーの承認後に実行する
