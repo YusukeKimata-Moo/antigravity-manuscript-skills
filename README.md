@@ -2,7 +2,7 @@
 
 分子生物学の学術論文原稿を執筆・校正・英訳するための AI コーディングエージェント用スキルセットです。Claude Code、Codex、Antigravity など、`.agent/skills/` や `~/.agents/skills/` を認識するエージェントで共通して使用できます。
 
-** Updated ** :このスキルをプラグイン化したものを公開しました。（2026.4.15） (https://github.com/YusukeKimata-Moo/manuscript-skills-plugin)
+**Updated** :このスキルをプラグイン化したものを公開しました。（2026.4.15） (https://github.com/YusukeKimata-Moo/manuscript-skills-plugin)
 
 ### スキル一覧
 
